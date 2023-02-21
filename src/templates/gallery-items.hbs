@@ -1,0 +1,14 @@
+{{#each this}}
+  <li type="none" class="gallery__item">
+    <div class="gallery__thumb">
+      <img src="{{flag}}" alt="Флаг {{name}}" />
+    </div>
+    <h2>{{name}}</h2>
+    <p><b>Столиця:</b>{{capital}}</p>
+    <p><b>Мова:</b>{{language}}</p>
+
+    {{#if infected}}
+      <p style="font-size:24px; color: red;"><b>The end</b></p>
+    {{/if}}
+  </li>
+{{/each}}
